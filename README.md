@@ -14,12 +14,14 @@ Also the `data_handling/data_splitting.py` script contains the code for the data
 The `deep_learning/cross_validation_and_DL.py` script contains the code for the deep learning, where we implemented 5 fold cross validations with 100 epoches and callbacks to save the best model. This was done for both the first step and second step using four different models: `Our customised CNN`, `VGG16`, `ResNet50`, and `DenseNet`. 
 The `deep_learning/DL_performance_evaluation` script is used to call the needed scripts for training the model and the results are visualised for each steps. DenseNet was the best performing model. Figure 1 displays the ROC curve for the first and second step of the deep learning approach using the DenseNet model.
 
-![DL ROC curve](figures/rocdl1.png "DL ROC curve") ![DL ROC curve2](figures/rocdl2.png "DL ROC curve2")
+![DL ROC curve](figures/rocdl1.png "DL ROC curve") 
+![DL ROC curve2](figures/rocdl2.png "DL ROC curve2")
 Figure 1: Performance Evaluation of the DenseNet model using ROC-AUC
 
 ## DEEP-MACHINE LEARNING APPROACH
 The `machine_learning/feature_extraction_and_engineering.py` script contains the code for extracting features from the images using the deep learning models as feature extractors, while the `machine_learning/machine_learning.py` script contains the implementation of the machine learning models used: `Random_forest`, `SVM`, `KNN`, and `Logistic Regression`. These models where trained using the features extracted from each of the deep learning models and this result into 32 models in total (first and second steps). 
 For the performance evaluation, the `machine_learning/ML_performance_evaluation` script is used to call the needed scripts for training the machine learning models and the results are visualised for each steps. The random forest with DenseNet as feature extractor showed the best results. Figure 2 displays the ROC curve for the first and second step of the random forest classify using DenseNet models as feature extractor.
 
-![ML ROC curve](figures/rocml1.png "ML ROC curve") ![ML ROC curve2](figures/rocml2.png "ML ROC curve2")
+![ML ROC curve](figures/rocml1.png "ML ROC curve") 
+![ML ROC curve2](figures/rocml2.png "ML ROC curve2")
 Figure 2: Performance Evaluation of the random forest (DenseNet) models using ROC-AUC
